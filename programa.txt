@@ -1,0 +1,27 @@
+VARIABLES
+    divisor:INTEGER;
+    dividend:INTEGER;
+    remainder:INTEGER;
+
+# INICIO DO ALGORITMO EM LINGUAGEM ownL
+BEGIN
+    READ divisor;
+    READ dividend;
+
+    IF (divisor = 0 OR dividend = 0) THEN {
+        PRINT 'UNKNOWN INFORMATION'
+    }
+    ELSE {
+        WHILE (dividend <= divisor) DO {
+            ASSIGN divisor % dividend TO remainder;
+                IF (remainder = 0) THEN {
+                    PRINT dividend;
+                }
+            ASSIGN dividend + 1 TO dividend;
+        }
+    }
+END
+# FIM DO ALGORITMO EM LINGUAGEM ownL
+    
+
+
